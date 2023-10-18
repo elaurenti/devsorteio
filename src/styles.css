@@ -1,0 +1,147 @@
+  @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #ffe501;
+}
+
+.logo {
+    width: 70vh;
+    display: block;
+    margin: 10px auto;
+}
+
+h1 {
+    font-family: 'Black Ops One';
+    font-size: 80px;
+    color: #ff000d;
+    -webkit-text-stroke: 0.5px black;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    width: 500px;
+    height: 200px;
+    background-color: #000000;
+    margin: 0 auto 40px;
+    padding: 10px 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+
+p {
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+label {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid #BBBB;
+    background: #721b1b;
+    height: 30px;
+    margin-bottom: 24px;
+    padding-left: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer; 
+    border: none;
+}
+
+button {
+    border-radius: 5px;
+    background: #ff000d;
+    width: 100%;
+    height: 45px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 8, 8, 0.685);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 20% auto;
+    padding: 20px;
+    border:none;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(243, 0, 0, 0.2);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#modalText {
+    font-family: 'Black Ops One';
+    font-size: 50px;
+    color: #000000;
+}
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.menu-lateral ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    list-style-type: none;
+}
+
+.menu-lateral .icone{
+    width: 30px;
+    filter: invert(0);
+    transition: 0.3s ease-in-out;
+  
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.menu-lateral .icone:hover{
+    transform: scale(1.2);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="icon" href="./src/img/favicon.ico">
+
+    <title>DevSorteio</title>
+</head>
+<body>
+    <img class="logo" src="./src/img/gid-dado.webp" alt="logo-dado">
+    <h1>DevSorteio</h1>
+<main>
+    <p>Sortear um número</p>
+    <label>
+        <input class="input-min" placeholder="entre" type="number">
+    </label>
+    <label>
+        <input class="input-max" placeholder="e" type="number">
+    </label>
+    <button onclick="generateNumber()">Sortear</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+</main>
+<aside class="menu-lateral">
+    <ul>
+        <li>
+            <a href="https://github.com/elaurenti" target="_blank">
+                <img src="./src/img/github_black_logo_icon_147128.svg" alt="ícone Github" class="icone">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/evlaurenti/" target="_blank">
+                <img src="./src/img/linkedin_black_logo_icon_147114.svg" alt="ícone Linkedin-in" class="icone">
+            </a>
+        </li>
+    </ul>
+</aside>
+</body>
+<script src="./src/index.js"></script>
+
+</html>
